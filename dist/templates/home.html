@@ -1,8 +1,6 @@
-<h1>Home Page</h1>
+<h1>{{home.test}}</h1>
     <nav>
-        <ul>
-            <li>Room 1</li>
-            <li>Room 2</li>
-            <li>Room 3</li>
+        <ul ng-repeat='room in home.rooms'>
+            <li>{{room.name}}</li>
         </ul>
     </nav>
