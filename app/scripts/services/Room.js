@@ -7,7 +7,12 @@
       
     Room.all = rooms;
       
-    return Room;
+    Room.add = function(name) {
+        rooms.$add(name);
+    }
+      
+    return Room; 
+    
   }
 
   angular
