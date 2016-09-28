@@ -10,6 +10,10 @@
     Room.add = function(name) {
         rooms.$add(name);
     }
+    
+    Room.getMessages = function(roomId) {
+        return ref.orderByChild('roomId').equalTo(roomId);
+    }
       
     return Room; 
     
