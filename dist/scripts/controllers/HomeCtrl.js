@@ -11,7 +11,7 @@
          ctrl.open = function() {
              $uibModal.open({
                 templateUrl: '/templates/modal.html',
-                 controller: 'ModalInstanceCtrl as modal'
+                 controller: 'ModalCtrl as modal'
              });
          }
      }
