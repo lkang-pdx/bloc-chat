@@ -9,6 +9,15 @@
         console.log(roomId);
         return $firebaseArray(messageRef.orderByChild('roomId').equalTo(roomId));
     }
+    
+    Message.send = function(newMessage){
+        messages.$add({
+            username: newMessage.username,
+            content: newMessage.content,
+            sentAt: Date.now(),
+            roomId: newMessage.roomId
+        });
+    }
       
     return Message; 
     

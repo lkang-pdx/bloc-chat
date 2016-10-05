@@ -14,6 +14,10 @@
     <ul ng-repeat="message in home.currentMessages">
         <li>{{message.username}}</li>
         <li>{{message.content}}</li>
-        <li>{{message.sentAt}}</li>
+        <li>{{message.sentAt | date : "medium" : 'PST'}}</li>
     </ul>
+</section>
+<section>
+    <input type="text" ng-model="message.content">
+    <button ng-click="home.sendMessage(message)">Submit Message</button>
 </section>

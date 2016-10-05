@@ -18,6 +18,13 @@
              ctrl.currentRoom = room;
              ctrl.currentMessages = Message.getByRoomId(ctrl.currentRoom.$id);
          };
+         
+         ctrl.sendMessage = function(message) {
+             message.username = $cookies.get('blocChatCurrentUser');
+             message.roomId = ctrl.currentRoom.$id;
+             Message.send(message);
+             console.log(message);
+         }
      }
  
      angular
