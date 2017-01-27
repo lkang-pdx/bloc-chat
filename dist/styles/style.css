@@ -1,45 +1,30 @@
-/*
-*, *::before, *::after {
-     -moz-box-sizing: border-box;
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
- }
-
 html {
-    height: 100%; 
-    font-size: 100%;
-}
-
-body {
-    font-family: 'Arial'; 
-    min-height: 100%;
+    font-family: 'Arial';
 }
 
 .chat-rooms {
-    position: fixed;
-    background-color: darkgrey;
-    top: 0px;
-    left: 0px;
-    width: 20%;
-    height: 80%;
-    padding: 10px;
+    background-color:#6495ED;
+    display: inline-block;
+    width: 15%;
+    height: 100vh;
+    padding-left: 10px
+}
+
+#overlay {
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  padding: 25px;
+  border: 2px solid gray;
+  background-color: #F0FFFF;
+  width: 50%;
+  height: 50%;
+  z-index: 100;
+  font-size: 150%;
 }
 
 .chat-messages {
     position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    width: 80%;
-    height: 100%;
+    top: 0%;
+    left: 20%;
 }
-
-.modal-container {
-    position: fixed;
-    z-index: 1;
-    top: 50%;
-    right: 0;
-    width: 80%;
-    height: 100%;
-}
-*/
